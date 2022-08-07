@@ -8,7 +8,10 @@ const animItems = document.querySelectorAll("._anim-items"),
   turn = document.querySelectorAll(".term__turn"),
   termClose = document.querySelectorAll(".term__close"),
   menu = document.querySelectorAll(".menu__li"),
-  sectons = document.querySelectorAll('._main'),
+  sectons = document.querySelectorAll("._main"),
+  arrows = document.querySelectorAll(".term__arrows"),
+  navbarBtn = document.querySelector(".navbar__btn"),
+  navbarContent = document.querySelector(".navbar__menu"),
   termInfo = document.querySelector(".terms__info"),
   termInfoContent = document.querySelectorAll(".terms__info__content"),
   nav = document.querySelector(".main__navbar");
@@ -69,16 +72,51 @@ add.addEventListener("click", function () {
   }
 });
 
+// for (let i = 0; i < termBtn.length; i++) {
+//   termBtn[i].addEventListener("click", function () {
+//     termInfo.style.display = "flex";
+//     setTimeout(function () {
+//       termInfo.style.opacity = "1";
+//     }, 200);
+//     setTimeout(function () {
+//       termInfoContent[i].style.display = "flex";
+//       turn[i].innerHTML = `<p>${i + 1}</p>/4`;
+//     }, 400);
+//   });
+// }
+
 for (let i = 0; i < termBtn.length; i++) {
   termBtn[i].addEventListener("click", function () {
     termInfo.style.display = "flex";
     setTimeout(function () {
       termInfo.style.opacity = "1";
     }, 200);
+    for (let ii = 0; ii < termBtn.length; ii++) {
+      setTimeout(function () {
+        termInfoContent[ii].style.display = "none";
+      }, 400);
+    }
     setTimeout(function () {
       termInfoContent[i].style.display = "flex";
       turn[i].innerHTML = `<p>${i + 1}</p>/4`;
     }, 400);
+  });
+}
+
+for (let i = 0; i < arrows.length; i++) {
+  termBtn[i].addEventListener("click", function () {
+    if (i = 0) {
+        for (let ii = 0; ii < termBtn.length; ii++) {
+            setTimeout(function () {
+                termInfoContent[ii].style.display = "none";
+            }, 400);
+            }
+            setTimeout(function () {
+            termInfoContent[i].style.display = "flex";
+            turn[i].innerHTML = `<p>${i + 1}</p>/4`;
+            }, 400);
+    }
+    
   });
 }
 
@@ -97,8 +135,26 @@ for (let i = 0; i < menu.length; i++) {
       e.preventDefault();
     });
     let sectionTop = sectons[i].getBoundingClientRect().top
-    console.log(i);
+    // console.log(i);
     // window.scrollTo(0, sectionTop);
 
     
+}
+ 
+navbarBtn.addEventListener("click", menuOpen);
+
+function menuOpen() {
+if (navbarBtn.classList.contains("active") === true) {
+    navbarBtn.classList.remove("active");
+    navbarContent.style = `left: -102%; transition: left 0.5s`;
+} else {
+    navbarBtn.classList.add("active");
+    navbarContent.style = `left: 0; transition: left 0.5s`;
+}
+}
+function menuClose(event) {
+if (event.target.classList.contains("navbar__content")) {
+    navbarContent.style = `left: -102%; transition: left 0.5s`;
+    navbarBtn.classList.remove("active");
+}
 }
