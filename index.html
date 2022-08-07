@@ -8,21 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <!-- <div class="hexagone"></div>
-        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-                <filter id="round">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />    
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                </filter>
-            </defs>
-        </svg> -->
-        <div class="header__content _container">
+    <div class="header _main">
+        <div class="hexagone _anim-items _anim-opacity">
+            <img src="images/Group 4.png" alt="">
+        </div>
+        <div class="header__content  _anim-items _anim-no-hide _container">
             <div class="main__navbar">
                 <div class="navbar _container">
-                    <div class="logo _anim-items">
+                    <div class="logo _anim-items _anim-no-hide">
                         <a href="#">
                             <svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M43.8228 28.4529L46.5941 27.9911C46.8247 30.6472 49.2788 31.5134 51.3864 31.5134C53.5807 31.5134 56.0055 30.6472 56.0055 27.6733C56.0055 21.8994 44.2546 27.2981 44.2546 19.0695C44.2546 15.5185 47.1418 13.2377 51.2991 13.295C54.8214 13.353 57.5355 15.1721 57.9972 18.1746L55.3119 18.6657C55.052 16.4427 53.1756 15.5447 51.2991 15.5447C49.3068 15.5447 47.1418 16.4109 47.1418 19.0669C47.1418 24.2351 58.8921 18.865 58.8921 27.6707C58.8921 30.3268 57.4195 33.9357 51.3858 33.9357C45.6699 33.9389 44.0814 30.9936 43.8228 28.4529Z" fill="white"/>
@@ -93,23 +86,22 @@
                         </a>
                     </div>
                     <div class="navbar__menu">
-                        <ul class="_anim-items _hover">
-                            <a href="#"><li>O nas</li></a>
-                            <a href="#"><li>realizacje</li></a>
-                            <a href="#"><li>oferta</li></a>
-                            <a href="#"><li>kontakt</li></a>
-                            <a href="#"><li>zapytanie ofertowe</li></a>
+                        <ul class="navbar__menu-ul _anim-items _anim-no-hide _hover">
+                            <a class="menu__li" href="#"><li>O nas</li></a>
+                            <a class="menu__li" href="#"><li>realizacje</li></a>
+                            <a class="menu__li" href="#"><li>oferta</li></a>
+                            <a class="menu__li" href="#"><li>kontakt</li></a>
+                            <a class="menu__li" href="#"><li>zapytanie ofertowe</li></a>
                         </ul>
                     </div>
                 </div>
             </div>
-            
             <div class="header__info">
-                <div class="header__title _anim-items _anim-no-hide">Zbuduj z nami <br><span>dom swoich marzeń</span></div>
-                <div class="header__p _anim-items _anim-no-hide">
+                <div class="header__title _anim-items _anim-show a _anim-no-hide">Zbuduj z nami <br><span>dom swoich marzeń</span></div>
+                <div class="header__p _anim-items _anim-show b _anim-no-hide">
                     <p class="_anim-show">Skorzystaj z naszej wiedzy, doświadczenia, a przede wszystkim otwartości na świeże trendy i rozwiązania. <br><br>
                 <span>Razem stwórzmy miejsce, które da ci energię do życia!</span></p></div>
-                <a href="#" class="header__btn _anim-items _anim-opacity _anim-no-hide">
+                <a href="#" class="header__btn _anim-items _anim-no-hide _anim-opacity _anim-no-hide">
                     <div class="header__btn-i">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.5355 6.22191L21.7782 10.4645L9.82585 22.4169L5.33654 22.6635L5.58321 18.1742L17.5355 6.22191Z" stroke="white" stroke-width="3" stroke-linecap="round"/>
@@ -120,7 +112,10 @@
                     <p>Kontakt</p>
                 </a>
             </div>
-            <div class="blocks">
+            <a href="#" class="header__pics _anim-show c"><img src="images/Group 7.png" alt=""></a>
+            <a href="#" class="header__pics _anim-show d"><img src="images/Group 9.png" alt=""></a>
+            <a href="#" class="header__pics _anim-show f"><img src="images/Group 8.png" alt=""></a>
+            <!-- <div class="blocks">
                 <svg width="253" height="616" viewBox="0 0 253 616" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_bd_79_127)">
                     <path d="M104.904 8.46572C112.771 3.92435 116.705 1.65367 120.887 0.764898C124.588 -0.021488 128.412 -0.021488 132.113 0.764898C136.295 1.65367 140.229 3.92435 148.096 8.46571L207.396 42.6946C215.267 47.2375 219.202 49.5089 222.064 52.687C224.596 55.499 226.509 58.8118 227.678 62.4107C229 66.4782 229 71.0218 229 80.1091V474.891C229 483.978 229 488.522 227.678 492.589C226.509 496.188 224.596 499.501 222.064 502.313C219.202 505.491 215.267 507.762 207.396 512.305L148.096 546.534C140.229 551.076 136.295 553.346 132.113 554.235C128.412 555.021 124.588 555.021 120.887 554.235C116.705 553.346 112.771 551.076 104.904 546.534L45.6038 512.305C37.7335 507.762 33.7983 505.491 30.9364 502.313C28.4041 499.501 26.4912 496.188 25.3217 492.589C24 488.522 24 483.978 24 474.891V80.1091C24 71.0218 24 66.4782 25.3217 62.4107C26.4912 58.8118 28.4041 55.499 30.9364 52.687C33.7983 49.5089 37.7335 47.2375 45.6038 42.6946L104.904 8.46572Z" fill="white" fill-opacity="0.09" shape-rendering="crispEdges"/>
@@ -161,16 +156,11 @@
                         ekologiczny
                     </a>
                 </div>
-                <!-- <div class="header__pics">
-                    <a href="#" class="header__pics-1"><img src="images/Group_9-removebg-preview.png" alt=""></a>
-                    <a href="#" class="header__pics-2"><img src="images/Group_7-removebg-preview.png" alt=""></a>
-                    <a href="#" class="header__pics-3"><img src="images/Group_8-removebg-preview.png" alt=""></a>
-                </div> -->
-            </div>
+            </div> -->
         </div>
     </div>
-    <div class="about _container">
-        <div class="about__title _anim-items _anim-show _anim-no-hide">O nas</div>
+    <div class="about _main _container">
+        <div class="about__title _anim-items _anim-no-hide _anim-show _anim-no-hide">O nas</div>
         <div class="about__content">
             <div class="_anim-items _anim-no-hide">
                 <p class="_anim-show">Od lat wytrwale pracujemy na zaufanie naszych klientów. <br><br>
@@ -178,17 +168,17 @@
                     Twój wymarzony dom wybudujemy w oparciu o najnowsze osiągnięcia technologiczne, sprawdzone nowości, ale przede wszystkim w harmonii z otoczeniem i zgodzie ze środowiskiem. 
                 </p>
             </div>
-            <div class="_anim-items _anim-no-hide">
+            <div class="about__content__img _anim-items _anim-no-hide">
                 <img src="images/masters.png" alt="" class="_anim-show">
             </div>
             <div class="_anim-items _anim-no-hide">
-                <p class="_anim-items _anim-show">Do projektów podchodzimy indywidualnie, uważnie słuchając klientów i proponując najlepsze rozwiązania. Wieloletnie doświadczenie i ogromny potencjał sprawiają, że kreujemy przestrzenie bezpieczne, komfortowe i rodzinne. Zobacz nasze portfolio, a zyskasz pewność, że budujemy jak nikt inny w Polsce. <br><br>
+                <p class="_anim-items _anim-no-hide _anim-show">Do projektów podchodzimy indywidualnie, uważnie słuchając klientów i proponując najlepsze rozwiązania. Wieloletnie doświadczenie i ogromny potencjał sprawiają, że kreujemy przestrzenie bezpieczne, komfortowe i rodzinne. Zobacz nasze portfolio, a zyskasz pewność, że budujemy jak nikt inny w Polsce. <br><br>
                 Twoje marzenia i nasze zaangażowanie to idealny wstęp do powstania domu, w którym poczujesz, że żyjesz!</p>
             </div>
         </div>
     </div>
-    <div class="team _container">
-        <div class="team__title _anim-items _anim-opacity _anim-no-hide">Nasz zespół<br>specjalistów 
+    <div class="team _main _container">
+        <div class="team__title _anim-items _anim-no-hide _anim-opacity _anim-no-hide">Nasz zespół<br>specjalistów 
             <div class="bg__hex">
                 <svg width="646" height="758" viewBox="0 0 646 758" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M265.255 30.7772C284.407 19.7064 293.889 14.2321 303.96 12.0893C312.887 10.19 322.113 10.19 331.04 12.0893C341.11 14.2321 350.592 19.7064 369.744 30.7772L592.679 159.643C611.798 170.695 621.258 176.17 628.134 183.812C634.229 190.587 638.833 198.566 641.648 207.233C644.823 217.011 644.829 227.941 644.829 250.025V507.975C644.829 530.059 644.823 540.989 641.648 550.767C638.833 559.434 634.229 567.413 628.134 574.188C621.258 581.83 611.798 587.305 592.679 598.357L369.744 727.223C350.592 738.294 341.11 743.768 331.04 745.911C322.113 747.81 312.887 747.81 303.96 745.911C293.889 743.768 284.407 738.294 265.255 727.223L42.3208 598.357C23.2014 587.305 13.7415 581.83 6.86536 574.188C0.770192 567.413 -3.83385 559.434 -6.6485 550.767C-9.82379 540.989 -9.82959 530.059 -9.82959 507.975V250.025C-9.82959 227.941 -9.82379 217.011 -6.6485 207.233C-3.83385 198.566 0.770192 190.587 6.86536 183.812C13.7415 176.17 23.2014 170.695 42.3208 159.643L265.255 30.7772Z" stroke="white" stroke-opacity="0.25"/>
@@ -198,15 +188,16 @@
 
             </div>
         </div>
-        <img src="images/greyson-joralemon-A1g0oeX29ec-unsplash 1.png" class="_anim-items _anim-opacity _anim-no-hide" alt="">
+        <div class="team__img _anim-items _anim-no-hide">
+            <img src="images/greyson-joralemon-A1g0oeX29ec-unsplash 1.png" class="_anim-opacity _anim-no-hide" alt="">
+        </div>
         <div class="team__info">
-            <p class="_anim-items _anim-opacity _anim-no-hide" >Nasz zespół specjalistów Składa się z doświadczonych koordynatorów, kierowników budowy z uprawnieniami, oraz sprawdzonych, stałych ekip z każdej branży. <br><br>
+            <p class="_anim-items _anim-no-hide _anim-opacity _anim-no-hide" >Nasz zespół specjalistów Składa się z doświadczonych koordynatorów, kierowników budowy z uprawnieniami, oraz sprawdzonych, stałych ekip z każdej branży. <br><br>
             Lubimy wyzwania, odważnie podejmujemy się trudnych realizacji oraz ciągle zdobywamy nowe doświadczenie. Stawiamy na innowacyjność, ekologię, bezpieczeństwo i partnerstwo. </p>
-            <p class="_anim-items _anim-opacity _anim-no-hide" >Jesteśmy zawsze blisko naszego klienta na wszystkich etapach budowy. Zaufanie wsród naszych klientów jest dla nas bezcenne.</p>
+            <p class="_anim-items _anim-no-hide _anim-opacity _anim-no-hide" >Jesteśmy zawsze blisko naszego klienta na wszystkich etapach budowy. Zaufanie wsród naszych klientów jest dla nas bezcenne.</p>
         </div>
     </div>
-    <div class="cards _anim-items _anim-no-hide _container">
-        <div class="blur__circle _anim-opacity"></div>
+    <div class="cards _main _anim-items _anim-no-hide _container">
         <div class="person _anim-show">
             <div class="cards__images">
                 <div class="card__image">
@@ -229,7 +220,7 @@
                             <line x1="8.14844" y1="19.3704" x2="9.85214" y2="19.3704" stroke="white" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    507 408 943</div>
+                    <p>507 408 943</p></div>
                 <div class="card__phone">
                     <div class="card__phone-i">                        
                         <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +231,8 @@
                             <rect x="0.000488281" width="23" height="18" rx="2" stroke="white" stroke-width="6" mask="url(#path-2-inside-1_79_221)"/>
                         </svg>
                     </div>
-                    michal.koza@shariminvest.com</div>
+                    <p>michal.koza@shariminvest.com</p>
+                </div>
             </div>
         </div>
         <div class="person _anim-show">
@@ -265,7 +257,7 @@
                             <line x1="8.14844" y1="19.3704" x2="9.85214" y2="19.3704" stroke="white" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    666 970 898</div>
+                    <p>666 970 898</p></div>
                 <div class="card__phone">
                     <div class="card__phone-i">                        
                         <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -277,7 +269,7 @@
                         </svg>
 
                     </div>
-                    krzysztof.koza@shariminvest.com</div>
+                    <p>krzysztof.koza@shariminvest.com</p></div>
             </div>
         </div>
         <div class="person _anim-show">
@@ -302,7 +294,7 @@
                             <line x1="8.14844" y1="19.3704" x2="9.85214" y2="19.3704" stroke="white" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    572 144 776</div>
+                    <p>572 144 776</p></div>
                 <div class="card__phone">
                     <div class="card__phone-i">                        
                         <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -314,11 +306,11 @@
                         </svg>
 
                     </div>
-                    lukasz.koza@shariminvest.com</div>
+                    <p>lukasz.koza@shariminvest.com</p></div>
             </div>
         </div>
     </div>
-    <div class="realisation _anim-items _anim-no-hide">
+    <div class="realisation _main _anim-items _anim-no-hide">
         <div class="realisation__bg">
             <svg width="1570" height="193" viewBox="0 0 1570 193" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M136.379 103.13L135.965 102.85C130.17 111.425 121.904 117.93 111.176 122.401L110.598 122.642L110.961 123.152L156.853 187.746H110.716L71.1065 129.383L70.9577 129.163H70.6928H40.891H40.391V129.663V187.746H0.5V4.4917H71.5536C86.6366 4.4917 99.6961 6.81558 110.756 11.4585L110.762 11.461C121.814 15.9312 130.292 22.6376 136.211 31.5519C142.125 40.4695 145.099 51.717 145.099 65.3263V69.3296C145.099 82.776 142.048 93.9421 135.966 102.848L136.379 103.13ZM40.391 97.3641V97.8641H40.891H74.8045C80.8621 97.8641 86.0895 96.6796 90.5033 94.3014L90.5097 94.2979C95.0733 91.7522 98.5529 88.2735 100.922 83.8415C103.46 79.2549 104.721 73.9959 104.721 68.0786C104.721 62.1644 103.461 56.9953 100.922 52.5656C98.555 47.9784 95.076 44.4852 90.5067 42.1078C86.092 39.5575 80.8514 38.2931 74.8045 38.2931H40.891V38.7931H40.391V97.3641Z" fill="#262B32" stroke="url(#paint0_linear_79_21)"/>
@@ -447,7 +439,7 @@
                 </ul>
             </div>
         </div>
-        <div class="add _anim-opacity f">
+        <div class="add">
             <svg width="126" height="141" viewBox="0 0 126 141" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M48.8859 6.69804C54.1486 3.66992 56.6861 2.2165 59.3716 1.64734C61.764 1.14029 64.236 1.14029 66.6284 1.64734C69.3139 2.2165 71.8514 3.66992 77.114 6.69804L111.314 26.3766C116.602 29.4194 119.146 30.8899 120.993 32.9368C122.638 34.7602 123.881 36.9094 124.641 39.2448C125.494 41.8663 125.5 44.8048 125.5 50.9059V90.0941C125.5 96.1952 125.494 99.1337 124.641 101.755C123.881 104.091 122.638 106.24 120.993 108.063C119.146 110.11 116.602 111.581 111.314 114.623L77.1141 134.302C71.8514 137.33 69.3139 138.784 66.6284 139.353C64.236 139.86 61.764 139.86 59.3716 139.353C56.6861 138.784 54.1486 137.33 48.886 134.302L14.686 114.623C9.39781 111.581 6.85378 110.11 5.00699 108.063C3.36181 106.24 2.11883 104.091 1.35889 101.755C0.505827 99.1337 0.5 96.1952 0.5 90.0942V50.9059C0.5 44.8048 0.505827 41.8663 1.35889 39.2448C2.11883 36.9094 3.36181 34.7602 5.00699 32.9368C6.85378 30.8899 9.3978 29.4194 14.6859 26.3766L48.8859 6.69804Z" fill="white" fill-opacity="0.1" stroke="#81858A"/>
             </svg>
@@ -473,21 +465,21 @@
             </div>
             <div class="big__circle">
             </div>
-            <div class="big__circle__content _anim-show d">
+            <div class="big__circle__content _anim-show _anim-no-hide d">
                 Dom jednorodzinny wybudowany <br> w Jabłonnie
             </div>
         </div>
     </div>
-    <div class="oferta _container">
-        <div class="about__title oferta__title _anim-items _anim-opacity">Oferta</div>
-        <p class="_anim-items _anim-opacity b">Możesz liczyć na nas już w momencie problemów ze znalezieniem odpowiedniej działki. Pomożemy też w przygotowaniu dokumentacji oraz pozyskania finansowania potrzebnego do budowy domu. Wesprzemy w załatwianiu formalności z urzędami. Gdy będziesz miał problem z wyborem projektu architektonicznego lub zechcesz zainwestować w dom skrojony na miarę Twoich potrzeb, polecimy Ci zaufanego architekta, który wesprze Cię w stworzeniu wizualizacji upragnionego domu.</p>
-        <div class="oferta__info _anim-items">
+    <div class="oferta _main _container">
+        <div class="about__title oferta__title _anim-items _anim-no-hide _anim-opacity">Oferta</div>
+        <p class="_anim-items _anim-no-hide _anim-opacity b">Możesz liczyć na nas już w momencie problemów ze znalezieniem odpowiedniej działki. Pomożemy też w przygotowaniu dokumentacji oraz pozyskania finansowania potrzebnego do budowy domu. Wesprzemy w załatwianiu formalności z urzędami. Gdy będziesz miał problem z wyborem projektu architektonicznego lub zechcesz zainwestować w dom skrojony na miarę Twoich potrzeb, polecimy Ci zaufanego architekta, który wesprze Cię w stworzeniu wizualizacji upragnionego domu.</p>
+        <div class="oferta__info _anim-items _anim-no-hide">
             <p class="_anim-opacity c">Z myślą o spełnieniu Twoich oczekiwań świadczymy szeroki zakres usług budowlanych. Możesz zlecić nam kompleksową budowę domu pod klucz, do którego wprowadzisz się z rodziną krótko po ukończeniu i odbiorze inwestycji. Możemy również wybudować dla Ciebie dom w stanie deweloperskim czy w stanie surowym (otwartym lub zamkniętym – jak wolisz).</p>
             <p class="_anim-opacity d">A gdy już Twój wymarzony dom będzie gotowy do zamieszkania, zajmiemy się zagospodarowaniem ogrodu wokół niego. Przeprowadzimy niwelację terenu, zagospodarujemy przestrzeń, wykonamy nasadzenia i postawimy ogrodzenie. Stworzymy dla Ciebie miejsce do błogiego odpoczynku po ciężkim dniu pracy. Możesz nam zaufać!</p>
             <p class="_anim-opacity f">W celu uzyskania dokładnej wyceny budowy domu prosimy o przesłanie zapytania wraz z prośbą o bezpłatny kosztorys. Każdy dom jest wyceniany indywidualnie w zależności od użytych materiałów.</p>
         </div>
     </div>
-    <div class="terms _container _anim-items">
+    <div class="terms _main _container _anim-items _anim-no-hide">
         <div class="term _anim-opacity a">
             <img src="images/icon1 1.png" alt="">
             <div class="terms__title">Stan surowy otwarty</div>
@@ -538,7 +530,12 @@
         </div>
         <div class="terms__info">
             <div class="terms__info__content first">
-                <div class="term__close"></div>
+                <div class="term__close">
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 1L1.0001 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1 1L25.9999 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
                 <div class="term__turn"></div>
                 <div class="term__title">Stan surowy otwarty</div>
                 <div class="term__text">
@@ -571,7 +568,12 @@
                 </div>
             </div>
             <div class="terms__info__content second">
-                <div class="term__close"></div>
+                <div class="term__close">
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 1L1.0001 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1 1L25.9999 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
                 <div class="term__turn"></div>
                 <div class="term__title">Stan surowy otwarty</div>
                 <div class="term__text">
@@ -604,7 +606,12 @@
                 </div>
             </div>
             <div class="terms__info__content third">
-                <div class="term__close"></div>
+                <div class="term__close">
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 1L1.0001 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1 1L25.9999 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
                 <div class="term__turn"></div>
                 <div class="term__title">Stan surowy otwarty</div>
                 <div class="term__text">
@@ -637,7 +644,12 @@
                 </div>
             </div>
             <div class="terms__info__content fourth">
-                <div class="term__close"></div>
+                <div class="term__close">
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 1L1.0001 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1 1L25.9999 25.9999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
                 <div class="term__turn"></div>
                 <div class="term__title">Stan surowy otwarty</div>
                 <div class="term__text">
@@ -671,12 +683,15 @@
             </div>
         </div>
     </div>
-    <div class="contact">
-        <div class="contact__content _container">
-            <div class="about__title contact__title">
+    <div class="contact _main _anim-items _anim-no-hide">
+        <div class="contact__bg _anim-show b">
+            <img src="images/2 85773925.png" alt="">
+        </div>
+        <div class="contact__content _container _anim-show">
+            <div class="about__title contact__title _anim-show b">
                 Kontakt
             </div>
-            <form action="" class="contact__form">
+            <form action="" class="contact__form _anim-opacity f">
                 <input type="text" name="" placeholder="Imię i nazwisko" id="" class="form__name form__input">
                 <input type="email" name="" placeholder="Twój e-mail" id="" class="form__email form__input">
                 <input type="text" name="" placeholder="Temat" id="" class="form__theme form__input">
@@ -697,7 +712,7 @@
         </div>
     </div>
     <div class="contacts">
-        <div class="contacts__content _anim-items">
+        <div class="contacts__content _anim-items _anim-no-hide">
             <div class="contacts__type _anim-show b">
                 <svg width="165" height="181" viewBox="0 0 165 181" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_bd_119_3968)">
@@ -742,7 +757,7 @@
                     </filter>
                     </defs>
                 </svg>
-                22 427 67 67
+                <p>22 427 67 67</p>
             </div>
             <div class="contacts__type  _anim-show c">
                 <svg width="165" height="181" viewBox="0 0 165 181" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -787,7 +802,7 @@
                     </filter>
                     </defs>
                 </svg>
-                kontakt@shariminvest.com
+                <p>kontakt@shariminvest.com</p>
             </div>
             <div class="contacts__type  _anim-show d">
                 <svg width="165" height="181" viewBox="0 0 165 181" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -829,7 +844,7 @@
                     </filter>
                     </defs>
                 </svg>
-                ul. Marynarska 14/302<br>02-674 Warszawa
+                <p>ul. Marynarska 14/302<br>02-674 Warszawa</p>
             </div>
             <div class="contacts__type  _anim-show f">
                 <svg width="165" height="181" viewBox="0 0 165 181" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -873,20 +888,20 @@
                     </filter>
                     </defs>
                 </svg>
-                10:00 - 18:00
+                <p>10:00 - 18:00</p>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="footer__content _container">
-            <div class="footer__info _anim-items">
+            <div class="footer__info _anim-items _anim-no-hide">
                 <p class="_anim-show a">Sharim Invest Spółka z ograniczoną odpowiedzialnością, adres: 02-674 Warszawa ul. Marynarska 14 lok. 302 posiadająca NIP: 7831822814 (dalej: „Administrator”) informuje, że podanie w formularzu kontaktowym danych jest dobrowolne, lecz niezbędne w celu udzielenia odpowiedzi na zadane pytanie, w tym kontakt zwrotny lub przesłanie </p>
             </div>
-            <div class="footer__info _anim-items a">
+            <div class="footer__info _anim-items _anim-no-hide a">
                 <p class="_anim-show b">oferty w związku zadanym pytaniem. Posiada Pani/Pan prawo dostępu do treści swoich danych - ich sprostowania, usunięcia, ograniczenia przetwarzania. Aby uzyskać pełną informację odnośnie zakresu czynności przetwarzania danych zapoznaj się z naszą Polityką Prywatności.</p>
             </div>
             <div class="footer__links">
-                <div class="footer__logo _anim-items _anim-show a">
+                <div class="footer__logo _anim-items _anim-no-hide _anim-show a">
                     <svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M43.8228 28.4526L46.5941 27.9909C46.8247 30.6469 49.2788 31.5132 51.3864 31.5132C53.5807 31.5132 56.0055 30.6469 56.0055 27.673C56.0055 21.8992 44.2546 27.2979 44.2546 19.0692C44.2546 15.5183 47.1418 13.2374 51.2991 13.2948C54.8214 13.3527 57.5355 15.1718 57.9972 18.1743L55.3119 18.6654C55.052 16.4425 53.1756 15.5444 51.2991 15.5444C49.3068 15.5444 47.1418 16.4107 47.1418 19.0667C47.1418 24.2348 58.8921 18.8648 58.8921 27.6705C58.8921 30.3265 57.4195 33.9354 51.3858 33.9354C45.6699 33.9386 44.0814 30.9934 43.8228 28.4526Z" fill="white"/>
                         <path d="M73.0965 25.6521V33.7935H70.2092V25.6521C70.2092 23.5445 69.7761 21.5234 67.957 21.5234C66.7156 21.5234 63.5398 21.7833 63.5398 28.3948V33.7935H60.6851V13.584H63.5436V22.9668C64.7271 20.2814 66.8347 19.1273 69.029 19.1273C73.0678 19.1273 73.0965 22.9381 73.0965 25.6521Z" fill="white"/>
@@ -954,7 +969,7 @@
                         </defs>
                     </svg>
                 </div>
-                <div class="footer__icons _hover _anim-items _anim-show">
+                <div class="footer__icons _hover _anim-items _anim-no-hide _anim-show">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>

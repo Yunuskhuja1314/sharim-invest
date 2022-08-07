@@ -6,6 +6,9 @@ const animItems = document.querySelectorAll("._anim-items"),
   term = document.querySelectorAll(".term"),
   termBtn = document.querySelectorAll(".terms__btn"),
   turn = document.querySelectorAll(".term__turn"),
+  termClose = document.querySelectorAll(".term__close"),
+  menu = document.querySelectorAll(".menu__li"),
+  sectons = document.querySelectorAll('._main'),
   termInfo = document.querySelector(".terms__info"),
   termInfoContent = document.querySelectorAll(".terms__info__content"),
   nav = document.querySelector(".main__navbar");
@@ -68,8 +71,6 @@ add.addEventListener("click", function () {
 
 for (let i = 0; i < termBtn.length; i++) {
   termBtn[i].addEventListener("click", function () {
-    // PlusOrMinus(btnPlusOrMinus[i]);
-    console.log(i);
     termInfo.style.display = "flex";
     setTimeout(function () {
       termInfo.style.opacity = "1";
@@ -81,6 +82,23 @@ for (let i = 0; i < termBtn.length; i++) {
   });
 }
 
-termBtn.addEventListener('click' , function(){
+for (let i = 0; i < termClose.length; i++) {
+  termClose[i].addEventListener("click", function () {
+    termInfo.style.opacity = "0";
+    setTimeout(function () {
+      termInfo.style.display = "none";
+    }, 1000);
+  });
+}
+
+
+for (let i = 0; i < menu.length; i++) {
+    menu[i].addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+    let sectionTop = sectons[i].getBoundingClientRect().top
+    console.log(i);
+    // window.scrollTo(0, sectionTop);
+
     
-});
+}
