@@ -2250,7 +2250,7 @@ body {
 	z-index: -5;
 	background: transparent;
 	filter: blur(4px);
-	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
 }
 
 .contacts__type:first-child,
